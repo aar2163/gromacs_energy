@@ -259,6 +259,9 @@ double do_md(FILE *fplog, t_commrec *cr, int nfile, const t_filenm fnm[],
     MPI_Status  stat[4];
     int nreq;
 
+/*index_r is for energy flow calculations: 
+  use DO_FLOW and DO_EDGE*/
+
 index_r[0] = 0;
 index_r[1] = 0;
 index_r[2] = 0;
